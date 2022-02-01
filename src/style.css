@@ -1,0 +1,45 @@
+body {
+  font-family: system-ui;
+  background: #bfa4cc;
+  color: rgb(84, 49, 87);
+  text-align: center;
+}
+
+p{
+  font-size: large;
+}
+
+input:focus{
+  color:rgb(152, 36, 206);
+}
+
+main{
+  float:left;
+  width: 500px;
+  height: 200px;
+  border: 8px double rgb(129, 15, 158);
+  margin: 20px;
+  border-radius:15px;
+}
+
+section{
+  width: 500px;
+  height: 200px;
+  float:right;
+  border: 8px double rgb(113, 15, 158);
+  margin: 20px;
+  border-radius:15px;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(180, 135, 194);
+  color: white;
+  text-align: center;
+  clear: both;
+  
+}
+

@@ -1,0 +1,34 @@
+{
+  "name": "cipher",
+  "version": "1.0.0",
+  "main": "src/index.html",
+  "license": "MIT",
+  "scripts": {
+    "htmlhint": "htmlhint src/*.html test/*.html",
+    "eslint": "eslint --ext .js src/ test/",
+    "pretest": "npm run eslint && npm run htmlhint",
+    "test": "jest --verbose --coverage",
+    "open-coverage-report": "opener ./coverage/lcov-report/index.html",
+    "start": "serve -s ./src",
+    "deploy": "gh-pages -d src",
+    "testing":"jest"
+  },
+  "dependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "babel-jest": "^27.0.1",
+    "gh-pages": "^3.1.0",
+    "htmlhint": "^1.0.0",
+    "jest": "^27.0.1",
+    "opener": "^1.5.1",
+    "serve": "^13.0.2"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-vue": "^8.4.0"
+  }
+}
